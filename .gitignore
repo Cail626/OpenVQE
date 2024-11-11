@@ -3,3 +3,4 @@
 openvqe.egg-info
 openvqe/__init__.pyc
 build
+openvqe/applications/QML_conspicuity_detection/Images_classification/Data_Sources
