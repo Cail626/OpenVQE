@@ -36,8 +36,12 @@ git checkout alpha
 pip install .
 pip install -r requirements.txt
 ```
-- Add your new amazing functionnalities and push your changes: 
+- Add your new amazing functionnalities and then push your changes: 
 ```shell
+# Add your changes
+git add --all
+# Give a name to your commited changes
+git commit -m "my amazing application"
 git push origin HEAD
 ```
 - Open a pull request (PR) to the alpha branch of the OpenVQE repository.
