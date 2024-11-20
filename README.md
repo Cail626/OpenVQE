@@ -32,6 +32,8 @@ DOI: [10.1002/wcms.1664](https://doi.org/10.1002/wcms.1664)
 Installation
 --------------
 
+:warning: **OpenVQE is currently only available on python 3.11 with a linux or mac OS**.  
+
 To install OpenVQE from source:
 
 ```bash
