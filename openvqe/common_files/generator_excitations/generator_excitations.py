@@ -11,7 +11,7 @@ from qat.fermion.transforms import (
     transform_to_parity_basis,
 )
 
-from .fermion_util import order_fermionic_term
+from ..fermion_util import order_fermionic_term
 
 def _apply_transforms(cluster_ops_fr, transform, perm=0):
     if transform == "JW":

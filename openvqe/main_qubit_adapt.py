@@ -1,5 +1,5 @@
 
-from openvqe.adapt.qubit_adapt_vqe import qubit_adapt_vqe
+from openvqe.algorithms.adapt.qubit_adapt_vqe import qubit_adapt_vqe
 from openvqe.common_files.qubit_pool import QubitPool
 from openvqe.common_files.molecule_factory_with_sparse import MoleculeFactory
 
@@ -66,7 +66,7 @@ len_returned_pool, returned_pool = qubitpool.generate_pool_without_cluster(pool_
 pool_mix = returned_pool
 pool_pure = returned_pool
 print("length of the pool",len(pool_mix))
-iterations_sim, iterations_ana, result_sim, result_ana = qubit_adapt_vqe(hamiltonian_sp, hamiltonian_sp_sparse,
+iterations, result = qubit_adapt_vqe(hamiltonian_sp, hamiltonian_sp_sparse,
        reference_ket, nbqbits, pool_mix, hf_init_sp, info['FCI'],
         chosen_grad = 1,
         adapt_conver    = 'norm',
@@ -74,10 +74,5 @@ iterations_sim, iterations_ana, result_sim, result_ana = qubit_adapt_vqe(hamilto
         adapt_maxiter   = 29,
         tolerance_sim = 1e-09,
         method_sim = 'BFGS')
-print("iterations",iterations_sim)    
-print("results",result_sim)
-
-
-
-
-
+print("iterations",iterations)
+print("results",result)

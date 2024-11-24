@@ -1,4 +1,4 @@
-from openvqe.common_files.generator_excitations import (
+from openvqe.common_files.generator.generator_excitations import (
     triple_excitation,
     _apply_transforms,
 )

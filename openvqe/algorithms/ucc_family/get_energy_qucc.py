@@ -4,10 +4,10 @@ from numpy import binary_repr
 from qat.lang.AQASM import Program, X
 from qat.qpus import get_default_qpu
 
-from ..common_files.circuit import efficient_fermionic_ansatz, count
+from ...common_files.circuit import efficient_fermionic_ansatz, count
 
 
-class EnergyUCC:
+class EnergyQUCC:
     def action_quccsd(self, theta_0, hamiltonian_sp, cluster_ops, hf_init_sp):
         """
         It returns the energy from the qubit coupled cluster ansatz which are obtained from common_files.circuit

@@ -10,7 +10,7 @@ from qat.fermion.transforms import (
     transform_to_parity_basis,
 )
 
-from .fermion_util import order_fermionic_term
+from ..fermion_util import order_fermionic_term
 
 
 

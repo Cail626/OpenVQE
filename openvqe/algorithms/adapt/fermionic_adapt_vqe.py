@@ -6,8 +6,8 @@ from qat.fermion.chemistry.ucc_deprecated import build_ucc_ansatz
 from qat.lang.AQASM import Program, X
 from qat.qpus import get_default_qpu
 
-from ..common_files.sorted_gradient import value_without_0, index_without_0, abs_sort_desc, corresponding_index
-from ..common_files.circuit import count
+from ...common_files.sorted_gradient import value_without_0, index_without_0, abs_sort_desc, corresponding_index
+from ...common_files.circuit import count
 
 def prepare_adapt_state(reference_ket, spmat_ops, parameters):
     """

@@ -2,7 +2,7 @@ import scipy.optimize
 from qat.fermion.chemistry.ucc_deprecated import build_ucc_ansatz
 from qat.lang.AQASM import Program
 from qat.qpus import get_default_qpu
-from ..common_files.circuit import count
+from ...common_files.circuit import count
 
 class EnergyUCC:
     def ucc_action(self, theta_current, hamiltonian_sp, cluster_ops_sp, hf_init_sp):
@@ -125,7 +125,7 @@ class EnergyUCC:
         
         fci: float
             the full configuration interaction energy (for any basis set)
-    
+
         
         Returns
         --------

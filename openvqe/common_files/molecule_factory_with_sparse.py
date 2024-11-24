@@ -21,7 +21,7 @@ from qat.fermion.transforms import (
     transform_to_parity_basis,
 )
 
-from .generator_excitations import (
+from .generator.generator_excitations import (
     singlet_gsd,
     singlet_sd,
     singlet_upccgsd,

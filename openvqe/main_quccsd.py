@@ -1,13 +1,13 @@
 
 
-from openvqe.ucc_family.get_energy_qucc import EnergyUCC
-from openvqe.common_files.molecule_factory import MoleculeFactory
+from openvqe.algorithms.ucc_family.get_energy_qucc import EnergyQUCC
+from openvqe.common_files.molecule_factory.molecule_factory import MoleculeFactory
 
 from qat.fermion.transforms import (get_jw_code, recode_integer)
 
 
 molecule_factory = MoleculeFactory()
-energy_ucc = EnergyUCC()
+energy_qucc = EnergyQUCC()
 
 molecule_symbol = 'H4'
 type_of_generator = 'QUCCSD'
@@ -65,7 +65,7 @@ theta_current2 = []
 for i in range(len(cluster_ops)):
     theta_current2.append(0.01)
 
-iterations, result = energy_ucc.get_energies(hamiltonian_sp,cluster_ops,hf_init_sp,theta_current1,theta_current2,FCI)
+iterations, result = energy_qucc.get_energies(hamiltonian_sp,cluster_ops,hf_init_sp,theta_current1,theta_current2,FCI)
 print("iterations are:", iterations)
 print("results are:", result)
 
